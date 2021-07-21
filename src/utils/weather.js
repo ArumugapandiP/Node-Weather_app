@@ -21,7 +21,7 @@ const weather = (lat,long,callback)=>{
             callback('unable to get weather',undefined);
         }
         else{
-            callback(undefined, "Temperaturde is "+body.current.temperature + "It feels like"+body.current.feelslike)
+            callback(undefined, "Temperaturde is "+body.current.temperature + " "+ "But it feels like "+body.current.feelslike + " "+ "Humidity is "+body.current.humidity + " " + "Last Observed Time: "+ body.current.observation_time)
         }
     })
 }
